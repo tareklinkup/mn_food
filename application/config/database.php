@@ -8,9 +8,9 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	
-  	'username' => 'mnf5oodb_soft',
-  	'password' => '*sarYQ#veQ,]',
-  	'database' => 'mnf5oodb_soft',
+  	'username' => 'root',
+  	'password' => '',
+  	'database' => 'mn_food',
 	
 // 	'username' => 'root',
 // 	'password' => '',

@@ -45,8 +45,8 @@ class Material extends CI_Controller
                 when m.status = 0 then 'Inactive'
             end as status_text
             from tbl_materials m
-            join tbl_productcategory c on c.ProductCategory_SlNo = m.category_id
-            join tbl_unit u on u.Unit_SlNo = m.unit_id
+            left join tbl_productcategory c on c.ProductCategory_SlNo = m.category_id
+            left join tbl_unit u on u.Unit_SlNo = m.unit_id
             where m.status = 1
             and m.branch_id = ?
         ", $this->brunch)->result();
@@ -86,7 +86,8 @@ class Material extends CI_Controller
                 "category_id" => $data->category_id,
                 "reorder_level" => $data->reorder_level,
                 "purchase_rate" => $data->purchase_rate,
-                "unit_id" => $data->unit_id
+                "unit_id" => $data->unit_id,
+                "branch_id" => $this->brunch
             );
             $this->db->insert('tbl_materials', $material);
             //$lastId = $this->db->insert_id();
