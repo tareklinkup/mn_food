@@ -8,19 +8,18 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	
-  	'username' => 'root',
-  	'password' => '',
-  	'database' => 'mn_food',
-	
-// 	'username' => 'root',
-// 	'password' => '',
-// 	'database' => 'mnfood',
-		
+	// 'username' => 'bigektuw_admin2',
+	// 'password' => 'l?;i(Bl!uj}z',
+	// 'database' => 'bigektuw_mnfoodbd',
 
+	'username' => 'root',
+	'password' => '',
+	'database' => 'mn_food',
+	
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'db_debug' => (ENVIRONMENT !== 'development'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
